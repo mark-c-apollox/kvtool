@@ -21,7 +21,7 @@ mkdir -p scratch
 
 DATA=./scratch/.kava
 DEST=${DEST:-./config/templates/kava/master/initstate/.kava}
-DENOM=${DENOM:-ukava}
+DENOM=${DENOM:-uass}
 ADDRESSES=./config/common/addresses.json
 
 BINARY="kava --home $DATA"
@@ -332,7 +332,7 @@ set-app-state evm.accounts
 # setup eip712 allowed messages
 set-app-state evm.params.eip712_allowed_msgs
 # setup enabled precompiles
-set-app-state evm.params.enabled_precompiles
+#set-app-state evm.params.enabled_precompiles
 
 # x/evmutil: enable evm -> sdk conversion pair
 jq '.app_state.evmutil.params.enabled_conversion_pairs = [
