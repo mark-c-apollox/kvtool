@@ -134,7 +134,7 @@ use it to send a query.
 
 ```bash
 # Add an alias to the dockerized kava cli
-alias dkava='docker exec -it generated-kavanode-1 kava'
+alias dkava='docker exec -it generated_kavanode_1 kava'
 
 # Confirm that the alias has been added
 alias kava
