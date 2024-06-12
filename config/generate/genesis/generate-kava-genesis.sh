@@ -91,7 +91,7 @@ sed -i '' 's/enabled-unsafe-cors = false/enabled-unsafe-cors = true/g' $DATA/con
 sed -i '' 's/enable-unsafe-cors = false/enable-unsafe-cors = true/g' $DATA/config/app.toml
 
 # Set the min gas fee
-sed -i '' 's/minimum-gas-prices = "0uass"/minimum-gas-prices = "0uass"/g' $DATA/config/app.toml
+sed -i '' 's/minimum-gas-prices = "10uass"/minimum-gas-prices = "10uass"/g' $DATA/config/app.toml
 
 # Disable pruning
 sed -i '' 's/pruning = "default"/pruning = "nothing"/g' $DATA/config/app.toml
