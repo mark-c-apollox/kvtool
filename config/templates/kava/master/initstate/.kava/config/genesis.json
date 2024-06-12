@@ -2211,8 +2211,7 @@
             ],
             "nested_types": []
           }
-        ],
-        "allow_unprotected_txs": false
+        ]
       }
     },
     "evmutil": {
