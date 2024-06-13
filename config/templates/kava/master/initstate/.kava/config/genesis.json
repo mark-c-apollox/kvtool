@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-06-13T03:47:22.62228Z",
+  "genesis_time": "2024-06-13T06:40:19.192066Z",
   "chain_id": "kavalocalnet_8888-1",
   "initial_height": "1",
   "consensus_params": {
@@ -1489,7 +1489,7 @@
         }
       ],
       "params": {
-        "evm_denom": "akava",
+        "evm_denom": "aass",
         "enable_create": true,
         "enable_call": true,
         "extra_eips": [],
