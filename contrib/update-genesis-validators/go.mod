@@ -3,12 +3,12 @@ module github.com/kava-labs/kvtool/contrib/update-genesis-validators
 go 1.20
 
 require (
-	cosmossdk.io/math v1.0.0-beta.6.0.20230216172121-959ce49135e4
-	github.com/cosmos/cosmos-sdk v0.46.11
-	github.com/kava-labs/kava v0.23.1
+	cosmossdk.io/math v1.3.0
+	github.com/cosmos/cosmos-sdk v0.47.10
+	github.com/kava-labs/kava v0.26.0
 	github.com/spf13/cobra v1.6.1
 	github.com/stretchr/testify v1.8.2
-	github.com/tendermint/tendermint v0.34.27
+	//github.com/tendermint/tendermint v0.34.27
 )
 
 require (
@@ -174,19 +174,20 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
+		github.com/cometbft/cometbft v0.37.4 // indirect
+    	github.com/cometbft/cometbft-db v0.9.1 // indirect
 )
 
 replace (
 	// Use the cosmos keyring code
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// Use rocksdb 7.9.2
-	github.com/cometbft/cometbft-db => github.com/kava-labs/cometbft-db v0.7.0-rocksdb-v7.9.2-kava.1
 	// Use cosmos-sdk fork with backported fix for unsafe-reset-all, staking transfer events, and custom tally handler support
-	github.com/cosmos/cosmos-sdk => github.com/kava-labs/cosmos-sdk v0.46.11-kava.3
+	github.com/cosmos/cosmos-sdk => github.com/kava-labs/cosmos-sdk v0.47.10-kava.1
 	// See https://github.com/cosmos/cosmos-sdk/pull/13093
 	github.com/dgrijalva/jwt-go => github.com/golang-jwt/jwt/v4 v4.4.2
 	// Use ethermint fork that respects min-gas-price with NoBaseFee true and london enabled, and includes eip712 support
-	github.com/evmos/ethermint => github.com/kava-labs/ethermint v0.21.0-kava-v24-0
+	github.com/evmos/ethermint => github.com/kava-labs/ethermint v0.21.0-kava-v26.2
 	// See https://github.com/cosmos/cosmos-sdk/pull/10401, https://github.com/cosmos/cosmos-sdk/commit/0592ba6158cd0bf49d894be1cef4faeec59e8320
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.7.0
 	// Use the cosmos modified protobufs
@@ -194,7 +195,12 @@ replace (
 	// Downgraded to avoid bugs in following commits which causes "version does not exist" errors
 	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
 	// Use cometbft fork of tendermint
-	github.com/tendermint/tendermint => github.com/kava-labs/cometbft v0.34.27-kava.0
+	//github.com/tendermint/tendermint => github.com/kava-labs/cometbft v0.34.27-kava.0
+	github.com/cometbft/cometbft => github.com/kava-labs/cometbft v0.37.4-kava.1
+    github.com/cometbft/cometbft-db => github.com/kava-labs/cometbft-db v0.9.1-kava.1
+
 	// Indirect dependencies still use tendermint/tm-db
 	github.com/tendermint/tm-db => github.com/kava-labs/tm-db v0.6.7-kava.4
+	github.com/kava-labs/kava => /root/kava
+
 )
