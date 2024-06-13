@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-06-12T03:36:37.959899Z",
+  "genesis_time": "2024-06-13T03:47:22.62228Z",
   "chain_id": "kavalocalnet_8888-1",
   "initial_height": "1",
   "consensus_params": {
@@ -2284,7 +2284,7 @@
                 }
               }
             ],
-            "memo": "461d9761df5db0a112407ca8a82f1774ef2dbaa3@192.168.3.10:26656",
+            "memo": "461d9761df5db0a112407ca8a82f1774ef2dbaa3@192.168.3.18:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -2313,7 +2313,7 @@
             "tip": null
           },
           "signatures": [
-            "EJK0qfqVbor3Q9+65Kyrm+2TnEvIMIT4l2t7vQJZgdB9BHZQBsZ0UFU8sPXanxugQLbX8FX6PVO+tzIYZWkI7Q=="
+            "r5KNfdFRe3elPpBVvZpaXEESP4UCR3e7rtvzN5slgTNiyQBp/JV6GAbkE1bkq+eXT+vP9IhyZv44AYyJaw36gA=="
           ]
         }
       ]
