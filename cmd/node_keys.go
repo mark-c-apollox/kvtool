@@ -1,13 +1,13 @@
-/*package cmd
+package cmd
 
 import (
 	"fmt"
 	"strconv"
 
+	"github.com/cometbft/cometbft/crypto/ed25519"
+	"github.com/cometbft/cometbft/p2p"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	//"github.com/tendermint/tendermint/p2p"
 )
 
 func NodeKeysCmd(cdc *codec.LegacyAmino) *cobra.Command {
@@ -39,4 +39,3 @@ func NodeKeysCmd(cdc *codec.LegacyAmino) *cobra.Command {
 	}
 	return cmd
 }
-*/

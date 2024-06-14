@@ -28,7 +28,7 @@ func Execute() error {
 	rootCmd.AddCommand(EstimateBlockHeightCmd())
 	rootCmd.AddCommand(InflationRootCmd())
 	rootCmd.AddCommand(MaccAddrCmd())
-	//rootCmd.AddCommand(NodeKeysCmd(cdc))
+	rootCmd.AddCommand(NodeKeysCmd(cdc))
 	rootCmd.AddCommand(SwapIDCmd(cdc))
 	rootCmd.AddCommand(testnet.Cmd())
 

@@ -28,7 +28,7 @@ require (
 	github.com/cockroachdb/errors v1.10.0 // indirect
 	github.com/cockroachdb/logtags v0.0.0-20230118201751-21c54148d20b // indirect
 	github.com/cockroachdb/redact v1.1.5 // indirect
-	github.com/cometbft/cometbft v0.37.4 // indirect
+	github.com/cometbft/cometbft v0.37.4
 	github.com/cometbft/cometbft-db v0.9.1 // indirect
 	github.com/cosmos/gogogateway v1.2.0 // indirect
 	github.com/cosmos/ibc-apps/middleware/packet-forward-middleware/v7 v7.1.3 // indirect
@@ -232,7 +232,8 @@ replace (
 	github.com/evmos/ethermint => github.com/kava-labs/ethermint v0.21.0-kava-v26.2
 	// Use the cosmos modified protobufs
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
-	github.com/kava-labs/kava => /root/kava
+	//github.com/kava-labs/kava => /root/kava
+	github.com/kava-labs/kava => /Users/user/Documents/work/source/jupitercim/web3/kava/kava
 	// Downgraded to avoid bugs in following commits which causes "version does not exist" errors
 	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
 	//github.com/btcsuite/btcd => /Users/user/Documents/work/source/jupitercim/web3/kava/btcd

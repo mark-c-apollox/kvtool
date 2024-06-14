@@ -201,6 +201,7 @@ replace (
 
 	// Indirect dependencies still use tendermint/tm-db
 	github.com/tendermint/tm-db => github.com/kava-labs/tm-db v0.6.7-kava.4
-	github.com/kava-labs/kava => /root/kava
+	//github.com/kava-labs/kava => /root/kava
+	github.com/kava-labs/kava => /Users/user/Documents/work/source/jupitercim/web3/kava/kava
 
 )

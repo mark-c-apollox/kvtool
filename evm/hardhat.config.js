@@ -11,8 +11,8 @@ module.exports = {
   defaultNetwork: "local",
   networks: {
     local: {
-      url: "http://localhost:8545/",
-      accounts: ["C93F165DF8EC9D318A464CA9304E96D627674DC7CD745B97786BB696480F13B3"]
+      url: "http://10.100.42.143:8545/",
+      accounts: ["92c7ecba91de7c08393420d17a8e99cefc649a4b6c42bd355d241e07586c5bc5"]
     }
   },
 };
