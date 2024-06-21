@@ -16,10 +16,10 @@ import (
 
 var (
 	kavaDeputiesStrings map[string]string = map[string]string{
-		"bnb":  "kava1r4v2zdhdalfj2ydazallqvrus9fkphmglhn6u6",
-		"btcb": "kava14qsmvzprqvhwmgql9fr0u3zv9n2qla8zhnm5pc",
-		"busd": "kava1hh4x3a4suu5zyaeauvmv7ypf7w9llwlfufjmuu",
-		"xrpb": "kava1c0ju5vnwgpgxnrktfnkccuth9xqc68dcdpzpas",
+		"bnb":  "ass1r4v2zdhdalfj2ydazallqvrus9fkphmgrzllvp",
+		"btcb": "ass14qsmvzprqvhwmgql9fr0u3zv9n2qla8ztxh33r",
+		"busd": "ass1hh4x3a4suu5zyaeauvmv7ypf7w9llwlfqu77v8",
+		"xrpb": "ass1c0ju5vnwgpgxnrktfnkccuth9xqc68dc35wydt",
 	}
 	bnbDeputiesStrings map[string]string = map[string]string{
 		"bnb":  "bnb1jh7uv2rm6339yue8k4mj9406k3509kr4wt5nxn",

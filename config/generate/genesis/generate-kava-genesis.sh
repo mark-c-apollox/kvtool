@@ -91,7 +91,7 @@ sed -i '' 's/enabled-unsafe-cors = false/enabled-unsafe-cors = true/g' $DATA/con
 sed -i '' 's/enable-unsafe-cors = false/enable-unsafe-cors = true/g' $DATA/config/app.toml
 
 # Set the min gas fee
-sed -i '' 's/minimum-gas-prices = "0uass"/minimum-gas-prices = "0.001uass;1000000000aass"/g' $DATA/config/app.toml
+sed -i '' 's/minimum-gas-prices = "0uass;0aass"/minimum-gas-prices = "0uass;0aass"/g' $DATA/config/app.toml
 
 # Disable pruning
 sed -i '' 's/pruning = "default"/pruning = "nothing"/g' $DATA/config/app.toml
@@ -260,9 +260,11 @@ add-eth-genesis-account-key bridge_relayer '.kava.users.bridge_relayer' 10000000
 
 # Accounts without keys
 # issuance module
-add-genesis-account kava1cj7njkw2g9fqx4e768zc75dp9sks8u9znxrf0w 1000000000000ukava,1000000000000swp,1000000000000hard
+# axis summer mouse second album left prison fancy relax sea clever tool pole average pencil jar festival favorite mean oval leaf steak resemble light
+add-genesis-account ass1m2vvn93807wcfexraw7pg2h4xjsnwtqtw88pps 1000000000000ukava,1000000000000swp,1000000000000hard
 # swap module
-add-genesis-account kava1mfru9azs5nua2wxcd4sq64g5nt7nn4n8s2w8cu 5000000000ukava,200000000btcb,1000000000hard,5000000000swp,103000000000usdx
+# crop when grunt ostrich process piano child finish only decrease remind slide kiss boil gate version hazard can cat lava talent drastic dress lounge
+add-genesis-account ass1ne0gttk2e2as640w8vm8q5d0xu9eyhldt3y8kg 5000000000ukava,200000000btcb,1000000000hard,5000000000swp,103000000000usdx
 
 # override `auth.accounts` array.
 # DO NOT CALL `add-genesis-account` AFTER HERE UNLESS IT IS AN EthAccount
@@ -416,6 +418,9 @@ if [ "$DENOM" != "ukava" ]; then
   # Replace ukava with $DENOM in app.toml
   sed -i '' 's/ukava/'"$DENOM"'/g' $DATA/config/app.toml
 fi
+
+# Replace the default evm denom of aphoton with ukava
+sed -in-place='' 's/akava/aass/g' $DATA/config/genesis.json
 
 ############################
 ##### MOVE FILE ASSETS #####
