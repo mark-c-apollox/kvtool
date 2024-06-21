@@ -407,7 +407,7 @@ jq '.app_state.savings.params.supported_denoms =
   $DATA/config/genesis.json | sponge $DATA/config/genesis.json
 
 # x/swap (uses $whale)
-set-app-state swap
+#set-app-state swap
 
 ########################
 ##### CHANGE DENOM #####
