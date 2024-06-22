@@ -261,10 +261,10 @@ add-eth-genesis-account-key bridge_relayer '.kava.users.bridge_relayer' 10000000
 # Accounts without keys
 # issuance module
 # axis summer mouse second album left prison fancy relax sea clever tool pole average pencil jar festival favorite mean oval leaf steak resemble light
-add-genesis-account ass1m2vvn93807wcfexraw7pg2h4xjsnwtqtw88pps 1000000000000ukava,1000000000000swp,1000000000000hard
+add-genesis-account ass1kuatfkj29h6fze6g2sqky8936rxu83ygdzlm4n 1000000000000ukava,1000000000000swp,1000000000000hard
 # swap module
 # crop when grunt ostrich process piano child finish only decrease remind slide kiss boil gate version hazard can cat lava talent drastic dress lounge
-add-genesis-account ass1ne0gttk2e2as640w8vm8q5d0xu9eyhldt3y8kg 5000000000ukava,200000000btcb,1000000000hard,5000000000swp,103000000000usdx
+add-genesis-account ass1mfru9azs5nua2wxcd4sq64g5nt7nn4n8vlzzg8 5000000000ukava,200000000btcb,1000000000hard,5000000000swp,103000000000usdx
 
 # override `auth.accounts` array.
 # DO NOT CALL `add-genesis-account` AFTER HERE UNLESS IT IS AN EthAccount
@@ -339,7 +339,7 @@ set-app-state evm.params.eip712_allowed_msgs
 # x/evmutil: enable evm -> sdk conversion pair
 jq '.app_state.evmutil.params.enabled_conversion_pairs = [
   {
-    "kava_erc20_address": "0xeA7100edA2f805356291B0E55DaD448599a72C6d",
+    "kava_erc20_address": "0x8602B68731AB82DF4BBEC53925BF5639A8827CDA",
     "denom": "erc20/tether/usdt"
   }
 ]' $DATA/config/genesis.json | sponge $DATA/config/genesis.json
@@ -407,7 +407,7 @@ jq '.app_state.savings.params.supported_denoms =
   $DATA/config/genesis.json | sponge $DATA/config/genesis.json
 
 # x/swap (uses $whale)
-#set-app-state swap
+set-app-state swap
 
 ########################
 ##### CHANGE DENOM #####
